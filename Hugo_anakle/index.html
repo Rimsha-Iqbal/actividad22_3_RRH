@@ -11,6 +11,8 @@
         <link rel="canonical" href="https://activida3.iaw/Hugo_anakle/">
       
       
+        <link rel="prev" href="..">
+      
       
         <link rel="next" href="../Hugo_walden/">
       
@@ -227,7 +229,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Index.md" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -467,15 +469,6 @@
   <a href="#construccion-del-sitio" class="md-nav__link">
     <span class="md-ellipsis">
       Construcción del sitio
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#-para-github-pages-solo-podras-asociar-la-carpeta-docs-con-el-siguiente-comando-hugo-d-docs" class="md-nav__link">
-    <span class="md-ellipsis">
-      - Para GitHub Pages, solo podrás asociar la carpeta docs con el siguiente comando: "hugo -d docs"
     </span>
   </a>
   
@@ -805,15 +798,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-para-github-pages-solo-podras-asociar-la-carpeta-docs-con-el-siguiente-comando-hugo-d-docs" class="md-nav__link">
-    <span class="md-ellipsis">
-      - Para GitHub Pages, solo podrás asociar la carpeta docs con el siguiente comando: "hugo -d docs"
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#despliegue-en-el-servidor-local" class="md-nav__link">
     <span class="md-ellipsis">
       Despliegue en el servidor local
@@ -954,13 +938,15 @@
 </ul>
 <h2 id="comprobacion-de-la-version-de-hugo">Comprobación de la versión de Hugo</h2>
 <ul>
-<li>Después de instalar Hugo, verificamos que la instalación se haya realizado correctamente ejecutando: <strong>"hugo version"</strong></li>
+<li>Después de instalar Hugo, verificamos que la instalación se haya realizado correctamente ejecutando: <strong>"hugo version"</strong>  </li>
 </ul>
+<p><img alt="version" src="../img/hugo-version.png" /> </p>
 <h2 id="creacion-de-un-nuevo-sitio">Creación de un nuevo sitio</h2>
 <ul>
-<li>creamos un nuevo sitio de Hugo utilizando el siguiente comando: <strong>"hugo new actividad22_1_RRH"</strong></li>
-<li>Y cambiamos el directorio con el comando: <strong>"cd actividad22_1_RRH"</strong></li>
+<li>creamos un nuevo sitio de Hugo utilizando el siguiente comando: <strong>"hugo new site actividad22_1_RRH"</strong></li>
+<li>Y cambiamos el directorio con el comando: <strong>"cd actividad22_1_RRH"</strong>  </li>
 </ul>
+<p><img alt="site" src="../img/hugo-new-site.png" /></p>
 <h2 id="creacion-de-repositorio-en-github">Creación de repositorio en GitHub</h2>
 <ul>
 <li>Creamos un nuevo repositorio sin README.md.</li>
@@ -969,7 +955,7 @@
 <h2 id="inicializacion-del-repositorio-git">Inicialización del repositorio Git</h2>
 <ul>
 <li>Después de creaxión del sitio Hugo, inicializamos este repositorio Git y conéctamos a un repositorio remoto en GitHub. Los comandos para hacerlo son: <strong>"git init"</strong></li>
-<li><strong>"git remote add origin https://github.com/tu_cuenta_github/myblog.git"</strong></li>
+<li><strong>"git remote add origin https://nombre_usuario:token@github.com/cuenta_github/myblog.git"</strong></li>
 </ul>
 <h2 id="adicion-de-un-tema-en-hugo">Adición de un tema en Hugo</h2>
 <h3 id="agregar-el-submodulo-del-tema">Agregar el submódulo del tema</h3>
@@ -977,15 +963,18 @@
 <li>Hugo no viene con un tema preconfigurado, así que añadimos uno manualmente. </li>
 <li>El siguiente muestramos cómo agregar el tema "Ananke": <strong>"git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke"</strong></li>
 </ul>
+<p><img alt="tema" src="../img/anake-theme.png" /></p>
 <h2 id="anadir-el-tema-a-la-configuracion">Añadir el tema a la configuración</h2>
 <ul>
 <li>Después de agregar el submódulo, editamos el archivo de configuración hugo.toml para incluir el tema: <strong>"echo "theme = 'ananke'" &gt;&gt; hugo.toml"</strong></li>
 </ul>
+<p><img alt="alt text" src="../img/anake-theme.png" /></p>
 <h2 id="creacion-de-contenido-en-hugo">Creación de contenido en Hugo</h2>
 <h3 id="crear-una-pagina">Crear una página</h3>
 <ul>
 <li>Para crear una página en Hugo, usa el siguiente comando: <strong>"hugo new miembros.md"</strong></li>
-<li>Aquí Ponemos información sobre miembros de nuestro grupo.</li>
+<li>Aquí Ponemos información sobre miembros de nuestro grupo.<br />
+<img alt="alt text" src="../img/hugo-miembros.png" /></li>
 </ul>
 <h3 id="crear-publicaciones-o-posts">Crear publicaciones o posts</h3>
 <ul>
@@ -996,13 +985,20 @@
 <h3 id="crear-un-leaf-bundle">Crear un "leaf bundle"</h3>
 <ul>
 <li>Un "leaf bundle" es un directorio que incluye un archivo index.md y uno o más recursos. </li>
-<li>Para crear un "leaf bundle", utilizamos el siguiente comando: <strong>"hugo new about/index.md"</strong>.</li>
+<li>Para crear un "leaf bundle", utilizamos el siguiente comando: <strong>"hugo new about/index.md"</strong>.<br />
+<img alt="alt text" src="../img/index.png" /></li>
 </ul>
 <h2 id="configuracion-de-archivos">Configuración de archivos</h2>
 <ul>
 <li>Hugo soporta tres formatos de configuración: YAML, JSON y TOML. Por defecto, Hugo utiliza el formato TOML.</li>
-<li>Aquí Configuramos el archivo hugo.toml donde ponemos baseurl, languageCodetitle, theme.</li>
-<li>También ponemos menu para nuestro sitio.</li>
+<li>
+<p>Aquí Configuramos el archivo hugo.toml donde ponemos baseurl, languageCodetitle, theme.<br />
+<img alt="alt text" src="../img/hugo-toml.png" />  </p>
+</li>
+<li>
+<p>También ponemos menu para nuestro sitio.  </p>
+<p><img alt="alt text" src="../img/menu.png" /></p>
+</li>
 </ul>
 <h2 id="construccion-del-sitio">Construcción del sitio</h2>
 <ul>
@@ -1013,12 +1009,16 @@
 <li>
 <p>También puedemos arrastrar la carpeta public a servicios de hosting en línea como Netlify o Cloudflare.</p>
 </li>
+<li>
+<p>Para GitHub Pages, solo podrás asociar la carpeta docs con el siguiente comando: <strong>"hugo -d docs"</strong>
+<img alt="alt text" src="../img/hugo-docs.png" /></p>
+</li>
 </ul>
-<h2 id="-para-github-pages-solo-podras-asociar-la-carpeta-docs-con-el-siguiente-comando-hugo-d-docs">- Para GitHub Pages, solo podrás asociar la carpeta docs con el siguiente comando: <strong>"hugo -d docs"</strong></h2>
 <h2 id="despliegue-en-el-servidor-local">Despliegue en el servidor local</h2>
 <ul>
 <li>Para ver el sitio en tu servidor de desarrollo local, ejecuta el siguiente comando: <strong>"hugo server"</strong></li>
-<li>Esto lanzará un servidor local donde podrás ver los cambios realizados en tu sitio.</li>
+<li>Esto lanzará un servidor local donde podrás ver los cambios realizados en tu sitio.<br />
+<img alt="local-server" src="../img/local-server.png" /></li>
 </ul>
 <h2 id="subir-al-github">Subir al GitHub</h2>
 <ul>
@@ -1051,14 +1051,17 @@
 <li><strong>Publish directory</strong>: Especificamos el directorio <code>public</code>, que es donde Hugo genera los archivos estáticos.</li>
 </ul>
 <h3 id="desplegar-el-sitio">Desplegar el sitio</h3>
-<p>Hacmos clic en "Deploy site" y Netlify comenzará a construir y desplegar tu sitio. El proceso puede tardar unos minutos.</p>
+<p>Hacmos clic en "Deploy site" y Netlify comenzará a construir y desplegar tu sitio. El proceso puede tardar unos minutos.<br />
+<img alt="netlify" src="../img/netlify.png" /></p>
 <h2 id="despliegue-en-el-github-pages">Despliegue en el GitHub pages</h2>
 <ul>
 <li>para desplegar al github pages eliminamos carpeta <strong>public</strong> y creamos docs.</li>
 <li>También creamos carpetas y fichero de hugo.yml <strong>".github/workflows/hugo.yml"</strong></li>
-<li>Añadimos el contenido en el fichero.</li>
-<li>En gitHub pages seleccionamos <strong>"GitHub Actions"</strong>.</li>
+<li>Añadimos el contenido en el fichero.<br />
+<img alt="alt text" src="../img/.github.png" /></li>
+<li>En gitHub pages seleccionamos <strong>"GitHub Actions"</strong>.  </li>
 </ul>
+<p><img alt="Github-Pages" src="../img/github-pages.png" /></p>
 
 
 
@@ -1086,6 +1089,22 @@
     
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: HOME">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                HOME
+              </div>
+            </div>
+          </a>
         
         
           

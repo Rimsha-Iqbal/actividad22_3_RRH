@@ -15,8 +15,8 @@ sudo apt update -y
 wget https://github.com/gohugoio/hugo/releases/download/v0.135.0/hugo_extended_0.135.0_linux-amd64.deb
 
 ```
-![update](/img/1.jpg)
-![wget](/img/2.jpg)
+![update](img/1.jpg)
+![wget](img/2.jpg)
 
 ```
 sudo apt install ./hugo_extended_0.135.0_linux-amd64.deb
@@ -24,25 +24,25 @@ hugo version
 ```
 ![wget](img/3.jpg)
 
-![wget](/img/4.jpg)
+![wget](img/4.jpg)
 ---
 
 ### **Paso 2: Creamos un repositorio vacío en GitHub**
 
 Para comenzar, configuramos un lugar donde guardar nuestro proyecto en línea. Abrimos nuestra cuenta en GitHub, hicimos clic en **New**, y creamos un repositorio vacío llamado `actividad22_2_RRH`. Dejamos el repositorio sin archivos adicionales como `README.md` o `.gitignore`.
 
-![wget](/img/5.jpg)
+![wget](img/5.jpg)
 ---
 
 ### **Paso 3: Clonamos el repositorio vacío**
 
 En nuestra máquina local, fuimos al directorio donde queríamos trabajar. Descargamos el repositorio vacío de GitHub utilizando `git clone`. Después de clonar, entramos en el directorio para empezar a trabajar.
 
-![clonar](/img/clonacion.jpg)
+![clonar](img/clonacion.jpg)
 
 Y luego combromos si el repositorio en local esta conectado con el que está en github : con ``` git remote -v ```
 
-![wget](/img/coneccion.jpg)
+![wget](img/coneccion.jpg)
 ---
 
 ### **Paso 4: Inicializamos un proyecto Hugo en el repositorio**
@@ -52,7 +52,7 @@ En el directorio del repositorio clonado, creamos la estructura básica de Hugo 
 ```bash
 hugo new site .
 ```
-![newSite](/img/7.jpg)
+![newSite](img/7.jpg)
 ---
 
 ### **Paso 5: Configuramos el tema Walden**
@@ -64,7 +64,7 @@ hugo new site .
     git submodule add https://github.com/Homecat805/hugo-theme-walden.git themes/hugo-theme-walden
   
    ```
-   ![newSite](/img/correctGitSubmoduleKmli.jpg)
+   ![newSite](img/correctGitSubmoduleKmli.jpg)
 
 2. **Iniciamos y actualizamos los submódulos**  
    Hugo requiere que los submódulos estén inicializados y actualizados para que funcionen correctamente.
@@ -73,7 +73,7 @@ hugo new site .
    git submodule init
    git submodule update
    ```
-   ![submodules](/img/9.jpg)
+   ![submodules](img/9.jpg)
 
 3. **Copiamos los archivos de ejemplo**  
    Para comenzar rápidamente, copiamos los archivos de ejemplo del tema al directorio raíz.
@@ -81,7 +81,7 @@ hugo new site .
    ```bash
    cp -rf themes/hugo-theme-walden/exampleSite/* ./
    ```
-    ![submodules](/img/10.jpg)
+    ![submodules](img/10.jpg)
 
 
 4. **Configuramos el tema en el archivo `hugo.toml`**  
@@ -91,7 +91,7 @@ hugo new site .
    echo "theme = 'hugo-theme-walden'" >> hugo.toml
    ```
 
-    ![hugotoml](/img/HugoTomlConfiguracion.jpg)
+    ![hugotoml](img/HugoTomlConfiguracion.jpg)
 ---
 
 ### **Paso 6: Creamos posts y añadimos imágenes**
@@ -101,25 +101,25 @@ hugo new site .
    Las publicaciones se guardan en la carpeta `content/en/blog/carpeta del post /index.md`. Segun el tema walden las carpetas de los posts tienen que tener los nombres :  sample1,sample2,3...  
    Por ejemplo, creamos un nuevo post así: 
 
-    ![index](/img/Hafsa.jpg)
+    ![index](img/Hafsa.jpg)
 
     Para que otras personas puedan hacer cambios en este repositorio en local y añadir posts hacemos un pull request :
   Ejemplo Desde Rimsha :
-  ![Rimsha](/img/RimshaPullREquest.jpg)
+  ![Rimsha](img/RimshaPullREquest.jpg)
   Ejemplo Desde Rodrigo :
-  ![Rodrigo](/img/postDeRodrigo.jpg)
+  ![Rodrigo](img/postDeRodrigo.jpg)
 
 2. **Almacenamos imágenes**  
    Las imágenes del sitio se colocaron en el directorio `content/en/blog/nombre de la carpeta del post/imagen`. Esto asegura una estructura organizada. Segun el tema walden las imagenes tienen que ser 2 de los nombres siguentes : headline.jpg , y thumbnail.jpg
    ejemplo :
 
-   ![index](/img/imagen.jpg)
+   ![index](img/imagen.jpg)
 
 
 
 3. **Ejemplo de la structura**
 
-    ![index](/img/structura%20correcta.jpg)
+    ![index](img/structura%20correcta.jpg)
 
 ---
 
@@ -130,11 +130,11 @@ Levantamos el servidor de desarrollo para revisar el sitio localmente. Usamos la
 ```bash
 hugo server --bind 10.0.22.201
 ```
-![index](/img/14.jpg)
+![index](img/14.jpg)
 
   Visitamos el sitio en `http://10.0.22.201:1313` para verificar su apariencia.
 
-  ![index](/img/pruebaEn%20local.jpg)
+  ![index](img/pruebaEn%20local.jpg)
 
 ---
 
@@ -148,7 +148,7 @@ hugo
 Que tambien el commando :**hugo server --bind 10.0.22.201** lo hace :
 Ejemplo :
 
-![index](/img/pruebaEn%20local.jpg)
+![index](img/pruebaEn%20local.jpg)
 
 ---
 
@@ -156,7 +156,7 @@ Ejemplo :
 
 Creamos un archivo `.github/workflows/hugo.yml` para automatizar el despliegue en GitHub Pages. Este archivo contiene instrucciones para compilar el sitio con Hugo y desplegarlo.
 
-![creacion.github](/img/creacion_de_.github.jpg)
+![creacion.github](img/creacion_de_.github.jpg)
 
 Contenido de `hugo.yml`:
 
@@ -266,12 +266,12 @@ Para completar el despliegue de nuestro sitio en GitHub Pages utilizando **GitHu
 3. **Configurar GitHub Pages**  
    -> Buscamos la sección **Pages** dentro de la configuración. Seleccionamos la opción **GitHub Actions** en lugar de "Deploy from a branch" (Desplegar desde una rama). Esto nos permitirá usar el flujo configurado en `hugo.yml` para manejar el despliegue.
 
-   ![github](/img/deployGithub.jpg)
+   ![github](img/deployGithub.jpg)
 
 4. **Comprobar el despliegue en el navegador**  
    -> Una vez configurado todo, abrimos un navegador web e ingresamos la URL del sitio publicada por GitHub Pages para verificar que esté funcionando correctamente.
 
-    ![github](/img/SitioGithubDeployed.jpg)
+    ![github](img/SitioGithubDeployed.jpg)
 
 ## Desplegar el Sitio en Cloudfare :
 
@@ -286,12 +286,12 @@ Para completar el despliegue de nuestro sitio en GitHub Pages utilizando **GitHu
 
 4. **Implementar el sitio**  
    -> Implementamos el sitio .
-   ![cloudfare](/img/ComoCloudFare.jpg)
-   ![cloudfare](/img/ImplementacionDoneCloudfare.jpg)
+   ![cloudfare](img/ComoCloudFare.jpg)
+   ![cloudfare](img/ImplementacionDoneCloudfare.jpg)
 
 5. **Comprobar el despliegue**  
    -> Finalmente, accedemos a la URL del sitio en Cloudflare a través de un navegador para verificar que el sitio esté correctamente desplegado y accesible.
-   ![cloudfare](/img/ResultadoCloudFareSite.jpg)
+   ![cloudfare](img/ResultadoCloudFareSite.jpg)
 
    - El enlace del sitio despligado en github pages : https://hafsa-katkout.github.io/actividad22_2_RRH/
 

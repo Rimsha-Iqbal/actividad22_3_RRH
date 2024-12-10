@@ -22,7 +22,7 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.135.0/hugo_extended_0
 sudo apt install ./hugo_extended_0.135.0_linux-amd64.deb
 hugo version
 ```
-![wget](/img/3.jpg)
+![wget](img/3.jpg)
 
 ![wget](/img/4.jpg)
 ---

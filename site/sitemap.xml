@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://activida3.iaw/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-10</lastmod>
     </url>
     <url>
          <loc>https://activida3.iaw/Hugo_anakle/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-10</lastmod>
     </url>
     <url>
          <loc>https://activida3.iaw/Hugo_walden/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-10</lastmod>
     </url>
     <url>
          <loc>https://activida3.iaw/mkdocs/</loc>
-         <lastmod>2024-12-08</lastmod>
+         <lastmod>2024-12-10</lastmod>
+    </url>
+    <url>
+         <loc>https://activida3.iaw/img/creacion-de-hugo-ananke/</loc>
+         <lastmod>2024-12-10</lastmod>
     </url>
 </urlset>

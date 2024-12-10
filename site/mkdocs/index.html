@@ -227,7 +227,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Index.md" class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -781,7 +781,6 @@
 
 <h2 id="indice">Índice</h2>
 <ul>
-<li><a href="#índice">Índice</a></li>
 <li><a href="#introducción-a-mkdocs">Introducción a MkDocs</a></li>
 <li><a href="#requisitos-previos">Requisitos Previos</a></li>
 <li><a href="#actualización-del-paquete">Actualización del paquete</a></li>
@@ -818,8 +817,10 @@
 de <strong>Debian 12</strong>.</p>
 <h3 id="instalacion-de-python-y-pip">Instalación de Python Y pip</h3>
 <p>Para instalar temas de tercero es necesario que instalamos paquete de Python y pip. 
-- Con el comando "apt install python3" Instalamos una versión reciente de python3.<br />
-- Con el comando "apt install python3-dev python3-pip" Instalamos <strong>pip</strong> es es gestor de paquetes de Python.</p>
+- Con el comando "apt install python3" Instalamos una versión reciente de python3.  </p>
+<ul>
+<li>Con el comando "apt install python3-dev python3-pip" Instalamos <strong>pip</strong> es es gestor de paquetes de Python.</li>
+</ul>
 <h3 id="instalacion-modulo-gestor-de-entornos-virtuales">Instalación módulo gestor de entornos virtuales</h3>
 <ul>
 <li>Con el comando "apt install python3.11-venv" instalamos el módulo gestor de entornos virtuales.</li>
@@ -838,11 +839,25 @@ de <strong>Debian 12</strong>.</p>
 <h2 id="comprobaciones-iniciales">Comprobaciones Iniciales</h2>
 <ul>
 <li>Para moestrar la versión de Python 3 que está instalado actualmente en nuestro sistema ejecutamos el comando <strong>"python3 - -version"</strong>.  </li>
-<li>El comando <strong>"pip3 - -version"</strong> uuestra la versión instalada de pip, el gestor de paquetes de Python, y la versión de Python con la que está asociada.</li>
-<li>Con el comando <strong>"pip3 install requests"</strong> Instalamos la biblioteca requests, que es una de las más utilizadas en Python para realizar solicitudes HTTP.</li>
-<li>El comando <strong>"pip3 list"</strong> ista todos los paquetes de Python instalados en el entorno actual junto con sus versiones.</li>
-<li>Con el comando <strong>"pip3 freeze"</strong>  muestramos todos los paquetes de Python instalados en un formato adecuado para un archivo requirements.txt.</li>
-<li>Con el comando <strong>"mkdocs --version"</strong> muestramos la versión instalada de MkDocs, confirmando que está presente en el entorno.</li>
+</ul>
+<p><img alt="alt text" src="../img/python3.png" />  </p>
+<ul>
+<li>
+<p>El comando <strong>"pip3 - -version"</strong> uuestra la versión instalada de pip, el gestor de paquetes de Python, y la versión de Python con la que está asociada.</p>
+<p><img alt="alt text" src="../img/pip3.png" /></p>
+</li>
+<li>
+<p>Con el comando <strong>"pip3 install requests"</strong> Instalamos la biblioteca requests, que es una de las más utilizadas en Python para realizar solicitudes HTTP.</p>
+</li>
+<li>
+<p>El comando <strong>"pip3 list"</strong> ista todos los paquetes de Python instalados en el entorno actual junto con sus versiones.<br />
+<img alt="alt text" src="../img/pip3_list.png" /></p>
+</li>
+<li>
+<p>Con el comando <strong>"pip3 freeze"</strong>  muestramos todos los paquetes de Python instalados en un formato adecuado para un archivo requirements.txt.</p>
+</li>
+<li>Con el comando <strong>"mkdocs --version"</strong> muestramos la versión instalada de MkDocs, confirmando que está presente en el entorno.<br />
+<img alt="alt text" src="../img/mkdocs_version.png" /></li>
 </ul>
 <h2 id="creacion-de-git-hub-repository">Creación de Git Hub repository</h2>
 <ul>
@@ -913,8 +928,9 @@ Pages.</li>
 <h3 id="configurar-un-dominio-personalizado">Configurar un Dominio Personalizado</h3>
 <ul>
 <li>Aquí en la sección <strong>Pages</strong>, seleccionamos repositorio de <strong>·actividad22_3_RRH"</strong>.</li>
-<li>Luego desplegamos este sitio web utilizando url que ha generado CloudFlare.</li>
+<li>Luego desplegamos este sitio web utilizando url que ha generado CloudFlare.  </li>
 </ul>
+<p><img alt="alt text" src="../img/sitio_mkdocs.png" /></p>
 
 
 

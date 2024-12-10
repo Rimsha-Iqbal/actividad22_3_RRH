@@ -44,13 +44,16 @@
 - Una vez descargado el archivo, instalamos el paquete .deb con el siguiente comando: **"apt install ./hugo_extended_0.135.0_linux-amd64.deb"**
 
 ## Comprobación de la versión de Hugo
-- Después de instalar Hugo, verificamos que la instalación se haya realizado correctamente ejecutando: **"hugo version"**
-  
+- Después de instalar Hugo, verificamos que la instalación se haya realizado correctamente ejecutando: **"hugo version"**  
+
+  ![version](img/hugo-version.png) 
 
 ## Creación de un nuevo sitio
 
-- creamos un nuevo sitio de Hugo utilizando el siguiente comando: **"hugo new actividad22_1_RRH"**
-- Y cambiamos el directorio con el comando: **"cd actividad22_1_RRH"**
+- creamos un nuevo sitio de Hugo utilizando el siguiente comando: **"hugo new site actividad22_1_RRH"**
+- Y cambiamos el directorio con el comando: **"cd actividad22_1_RRH"**  
+
+  ![site](img/hugo-new-site.png)
   
 ## Creación de repositorio en GitHub
 
@@ -60,21 +63,24 @@
 ## Inicialización del repositorio Git
 
 - Después de creaxión del sitio Hugo, inicializamos este repositorio Git y conéctamos a un repositorio remoto en GitHub. Los comandos para hacerlo son: **"git init"**
-- **"git remote add origin https://github.com/tu_cuenta_github/myblog.git"**
+- **"git remote add origin https://nombre_usuario:token@github.com/cuenta_github/myblog.git"**
 
 ## Adición de un tema en Hugo
 ### Agregar el submódulo del tema
 - Hugo no viene con un tema preconfigurado, así que añadimos uno manualmente. 
 - El siguiente muestramos cómo agregar el tema "Ananke": **"git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke"**
-  
+
+  ![tema](img/anake-theme.png)
 ## Añadir el tema a la configuración
 - Después de agregar el submódulo, editamos el archivo de configuración hugo.toml para incluir el tema: **"echo "theme = 'ananke'" >> hugo.toml"**
 
+  ![alt text](img/anake-theme.png)
 ## Creación de contenido en Hugo
 ### Crear una página
 
 - Para crear una página en Hugo, usa el siguiente comando: **"hugo new miembros.md"**
-- Aquí Ponemos información sobre miembros de nuestro grupo.
+- Aquí Ponemos información sobre miembros de nuestro grupo.  
+![alt text](img/hugo-miembros.png)
 
 ### Crear publicaciones o posts
 - Para crear publicaciones (posts) en Hugo, ejecutamos los siguientes comandos: **"hugo new posts/cala.md"** y
@@ -83,14 +89,18 @@
 
 ### Crear un "leaf bundle"
 - Un "leaf bundle" es un directorio que incluye un archivo index.md y uno o más recursos. 
-- Para crear un "leaf bundle", utilizamos el siguiente comando: **"hugo new about/index.md"**.
+- Para crear un "leaf bundle", utilizamos el siguiente comando: **"hugo new about/index.md"**.  
+![alt text](img/index.png)
 
 ## Configuración de archivos
 
 - Hugo soporta tres formatos de configuración: YAML, JSON y TOML. Por defecto, Hugo utiliza el formato TOML.
-- Aquí Configuramos el archivo hugo.toml donde ponemos baseurl, languageCodetitle, theme.
-- También ponemos menu para nuestro sitio.
-  
+- Aquí Configuramos el archivo hugo.toml donde ponemos baseurl, languageCodetitle, theme.  
+![alt text](img/hugo-toml.png)  
+
+- También ponemos menu para nuestro sitio.  
+
+    ![alt text](img/menu.png)
 
 ## Construcción del sitio
 - Para generar el sitio estático (HTML, CSS, JS), utilizamos el siguiente comando: **"hugo"**
@@ -99,14 +109,14 @@
 - También puedemos arrastrar la carpeta public a servicios de hosting en línea como Netlify o Cloudflare.
 
 - Para GitHub Pages, solo podrás asociar la carpeta docs con el siguiente comando: **"hugo -d docs"**
-- 
-
+![alt text](img/hugo-docs.png)
 
 
 ## Despliegue en el servidor local
 
 - Para ver el sitio en tu servidor de desarrollo local, ejecuta el siguiente comando: **"hugo server"**
-- Esto lanzará un servidor local donde podrás ver los cambios realizados en tu sitio.
+- Esto lanzará un servidor local donde podrás ver los cambios realizados en tu sitio.  
+![local-server](img/local-server.png)
 
 ## Subir al GitHub
 - Para subir al github utilizamos los comandos de Git habituales:
@@ -135,11 +145,15 @@ Después de seleccionar el repositorio, Netlify nos ìde configurar los parámet
 
 ###  Desplegar el sitio
 
-Hacmos clic en "Deploy site" y Netlify comenzará a construir y desplegar tu sitio. El proceso puede tardar unos minutos.
+Hacmos clic en "Deploy site" y Netlify comenzará a construir y desplegar tu sitio. El proceso puede tardar unos minutos.  
+![netlify](img/netlify.png)
 
 ## Despliegue en el GitHub pages
 - para desplegar al github pages eliminamos carpeta **public** y creamos docs.
 - También creamos carpetas y fichero de hugo.yml **".github/workflows/hugo.yml"**
-- Añadimos el contenido en el fichero.
-- En gitHub pages seleccionamos **"GitHub Actions"**.
+- Añadimos el contenido en el fichero.  
+![alt text](img/.github.png)
+- En gitHub pages seleccionamos **"GitHub Actions"**.  
+
+![Github-Pages](img/github-pages.png)
   

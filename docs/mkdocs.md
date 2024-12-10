@@ -1,6 +1,6 @@
 ## Índice
 
-- [Índice](#índice)
+
 - [Introducción a MkDocs](#introducción-a-mkdocs)
 - [Requisitos Previos](#requisitos-previos)
   - [Actualización del paquete](#actualización-del-paquete)
@@ -42,6 +42,8 @@ de **Debian 12**.
 
 Para instalar temas de tercero es necesario que instalamos paquete de Python y pip. 
 - Con el comando "apt install python3" Instalamos una versión reciente de python3.  
+  
+
 - Con el comando "apt install python3-dev python3-pip" Instalamos **pip** es es gestor de paquetes de Python.
   
 ### Instalación módulo gestor de entornos virtuales
@@ -60,11 +62,20 @@ Python necesita un directorio específico donde ubicar todos su software y libre
   
 ## Comprobaciones Iniciales
 - Para moestrar la versión de Python 3 que está instalado actualmente en nuestro sistema ejecutamos el comando **"python3 - -version"**.  
+
+  ![alt text](img/python3.png)  
+
 -  El comando **"pip3 - -version"** uuestra la versión instalada de pip, el gestor de paquetes de Python, y la versión de Python con la que está asociada.
+
+      ![alt text](img/pip3.png)
+
 -  Con el comando **"pip3 install requests"** Instalamos la biblioteca requests, que es una de las más utilizadas en Python para realizar solicitudes HTTP.
--  El comando **"pip3 list"** ista todos los paquetes de Python instalados en el entorno actual junto con sus versiones.
+-  El comando **"pip3 list"** ista todos los paquetes de Python instalados en el entorno actual junto con sus versiones.  
+![alt text](img/pip3_list.png)
+
 -  Con el comando **"pip3 freeze"**  muestramos todos los paquetes de Python instalados en un formato adecuado para un archivo requirements.txt.
--  Con el comando **"mkdocs --version"** muestramos la versión instalada de MkDocs, confirmando que está presente en el entorno.
+-  Con el comando **"mkdocs --version"** muestramos la versión instalada de MkDocs, confirmando que está presente en el entorno.  
+![alt text](img/mkdocs_version.png)
 
 ## Creación de Git Hub repository
 
@@ -133,4 +144,6 @@ Pages.
 
 ### Configurar un Dominio Personalizado
 - Aquí en la sección **Pages**, seleccionamos repositorio de **·actividad22_3_RRH"**.
-- Luego desplegamos este sitio web utilizando url que ha generado CloudFlare.
+- Luego desplegamos este sitio web utilizando url que ha generado CloudFlare.  
+
+  ![alt text](img/sitio_mkdocs.png)

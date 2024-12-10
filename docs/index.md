@@ -9,14 +9,14 @@ Este documento describe la organización y las URLs asociadas con las tareas del
 
 - **Repositorio en GitHub**  
 
-   [GitHub Repositorio](https://github.com/RodrigoGMG/actividad22_1_RRH/)
+   [GitHub Repositorio](https://rodrigogmg.github.io/actividad22_1_RRH/)
 
 - **Sitio en GitHub pages**  
 
    [GitHub pages](https://rodrigogmg.github.io/actividad22_1_RRH/)
 
 - **Sitio en Netlify**  
-   [netlify](https://actividad22-1-rrh.netlify.app/)
+   [netlify](https://actividad221rrh.netlify.app/)
 
 El repositorio y los sitios web se crean en la cuenta de **Rodrigo**. Los demás miembros del grupo participan como colaboradores.
 
@@ -31,11 +31,11 @@ El repositorio y los sitios web se crean en la cuenta de **Rodrigo**. Los demás
 
 - **Sitio en GitHub pages**  
 
-   [GitHub pages]()
+   [GitHub pages](https://hafsa-katkout.github.io/actividad22_2_RRH/)
 
 - **Sitio en Cloudflare Pages**   
 
-   [CloudFlare](https://actividad22_2_AGL.pages.dev/)
+   [CloudFlare](https://actividad22-2-rrh.pages.dev/)
 
 El repositorio y los sitios web se crean en la cuenta de **Hafsa**. Los demás miembros del grupo participan como colaboradores.
 
@@ -54,7 +54,7 @@ El repositorio y los sitios web se crean en la cuenta de **Hafsa**. Los demás m
 
 - **Sitio en ClouFlare Pages**   
 
-   [CloudFlare](https://actividad22-3-rrh.pages.dev/)
+   [CloudFlare](https://actividad22-3-rrh.pages.dev/ )
 
 
 El repositorio y los sitios web se crean en la cuenta de **Rimsha**. Los demás miembros del grupo participan como colaboradores.

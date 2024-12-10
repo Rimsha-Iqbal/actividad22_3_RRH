@@ -1,7 +1,7 @@
 site_name: Creación de Sitios Usando Diferentes Temas en HUGO y MKDOCS
 site_url: https://activida3.iaw
 nav:
-  - HOME: Index.md
+  - HOME: index.md
   - Hugo_ananke: Hugo_anakle.md
   - Hugo_walden:  Hugo_walden.md
   - MKDOCS: mkdocs.md
